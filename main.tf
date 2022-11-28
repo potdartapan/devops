@@ -132,4 +132,5 @@ resource "azurerm_linux_virtual_machine" "my_terraform_vm" {
 
 #comment
 #comment 2
+#FeatureA
 #comment 3
