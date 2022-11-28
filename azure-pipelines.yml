@@ -71,7 +71,7 @@ stages:
                provider: 'azurerm'
                command: 'apply'
                environmentServiceNameAzureRM: 'TerraformTestingServiceConnection'
-  - stage: copy files
+  - stage: copyFiles
     jobs: 
      - job: copyFiles
        steps:
