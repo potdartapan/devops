@@ -70,7 +70,7 @@ stages:
             displayName: apply 
             inputs:
                provider: 'azurerm'
-               command: 'apply'
+               command: 'destroy'
                environmentServiceNameAzureRM: 'TerraformTestingServiceConnection'
   - stage: copyFiles
     jobs: 
