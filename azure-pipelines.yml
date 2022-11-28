@@ -66,12 +66,12 @@ stages:
               provider: 'azurerm'
               command: 'plan'
               environmentServiceNameAzureRM: 'TerraformTestingServiceConnection'
-          - task: TerraformTaskV3@3
-            displayName: apply 
-            inputs:
-               provider: 'azurerm'
-               command: 'destroy'
-               environmentServiceNameAzureRM: 'TerraformTestingServiceConnection'
+#          - task: TerraformTaskV3@3
+#            displayName: apply 
+#            inputs:
+#               provider: 'azurerm'
+#               command: 'destroy'
+#               environmentServiceNameAzureRM: 'TerraformTestingServiceConnection'
   - stage: copyFiles
     jobs: 
      - job: copyFiles
