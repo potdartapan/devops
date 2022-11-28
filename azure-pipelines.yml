@@ -71,7 +71,15 @@ stages:
                provider: 'azurerm'
                command: 'apply'
                environmentServiceNameAzureRM: 'TerraformTestingServiceConnection'
-
+  - stage: copy files
+    jobs: 
+     - job: copyFiles
+       steps:
+          - task: CopyFiles@2
+            displayName: copy files
+            inputs:
+            Contents: '**'
+            TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 
 
